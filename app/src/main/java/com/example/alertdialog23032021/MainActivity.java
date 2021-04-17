@@ -20,7 +20,15 @@ public class MainActivity extends AppCompatActivity {
         mBtnAlertDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createAlertDialog();
+//                createAlertDialog();
+                // ctrl + alt + l : format  code
+                // ctrl + alt + o : xóa import không dùng
+                AppDialog.createDialogRegister(MainActivity.this, new OnListenerDataRegister() {
+                    @Override
+                    public void onGetData(String username, String password) {
+                        Toast.makeText(MainActivity.this, username + " , " + password, Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     // non access modifier

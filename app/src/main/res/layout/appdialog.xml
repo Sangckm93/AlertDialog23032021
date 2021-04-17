@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:minHeight="250dp"
     android:maxHeight="300dp"
+    android:minWidth="400dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center">
     <androidx.constraintlayout.widget.Guideline
@@ -25,7 +26,7 @@
         android:gravity="center"
         android:textColor="#FFF"
         android:textStyle="bold"
-        android:background="#FF9800"
+        android:background="#0928F1"
         android:textSize="40sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
